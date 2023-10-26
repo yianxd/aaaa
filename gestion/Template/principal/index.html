@@ -147,9 +147,9 @@
     </footer>
 </body>
 <style>
-    @font-face{
-    font-family: CaviarDreams;
-    src: url(fuentes/CaviarDreams.ttf)
+*{
+    margin: none;
+    padding: none;
 }
 
 body{
@@ -164,8 +164,6 @@ header{
     align-items: center;
     
 }
-
-
 
 header h2{
     font-family:CaviarDreams;
@@ -231,7 +229,7 @@ body nav{
     justify-content: center;
     align-items: center;
     height: 500px;
-    background-image:url(multimedia/img1.png);
+    background-image:url(../multimedia/img1.png);
     background-repeat: no-repeat;
     background-size:cover ;
     background-position: center;
@@ -242,7 +240,7 @@ body nav{
 .Buscador{
     margin-top: 70px;
     background-color:#ABD14B;
-    height: 55px;
+    height: 70px;
     width: 1000px;
     display: flex;
     justify-content: space-between;
@@ -285,7 +283,7 @@ body nav{
 }
 
 .button2{
-    margin-right: 180px;
+    margin-right: 178px;
     height: 40px;
     width: 70px;
     background-color: #DBE88B;
@@ -298,7 +296,7 @@ body nav{
 .button2:hover{
     height: 40px;
     width: 70px;
-    background-color: #0d5706;
+    background-color:#ABD14B;
     color: white;
 
 }
@@ -318,6 +316,7 @@ body nav{
     color: black;
     text-align: center;
     font-size: 0.5em;
+    margin-right: 10px;
     border-radius: 10%;
 }
 
@@ -365,45 +364,166 @@ body nav{
     color: black;
 }
 
-
-
-article .box{
-    height: 130px;
-    background-color: rgb(51, 155, 48);
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-    height: auto;
-    width: 100%;
-}
-article .box p{
+article{
     text-align: center;
-    margin-left: 200px;
-    margin-right: 100px;
-    padding: 26px;
+    font-family: CaviarDreams;
+}
+
+article .s{
+    margin-top: 100px;
+;
+}
+
+article h1{
+    font-size: 2em;
+}
+
+article  .s h1{
+    background-color:#ABD14B;
+    width: 1000px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+article .servicios{
+    padding-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-s1{
+    font-family: CaviarDreams;
+    height: 600px;
+    width: 400px;
+    margin-left: 180px;
+
+}
+
+.box-s2{
+    font-family: CaviarDreams;
+    height: 600px;
+    width: 400px;
+    margin-left: 50px;
+}
+
+.box-s3{
+    font-family: CaviarDreams;
+    height: 600px;
+    width: 400px;
+    margin-right: 180px;
+}
+
+.box-s3 .img{
+    width: 100px;
+}
+article .a{
+    background-image: url(../multimedia/prueba.jpg);
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:cover ;
+    background-attachment: fixed;
+}
+
+article .box p{
+    background-color:#ABD14B;
+    width: 1320px;
+    height: 115px;
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+    text-align: center;
+    margin-left: 300px;
+
+}
+article .link{
+    background-color: #ABD14B;
+    width: 500px;
+    height: 115px;
+    display: flex;
+    align-items:end;
+    justify-content:right end;
+    
+}
+article .link a{
+    text-decoration: none;
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: #1f441f;
+    border-radius: 50%;
 }
 
 article .box2{
     background-color: #ABD14B;
-    width: 100%;
+    width: 1330px;
     height: 560px;
+    margin-left: 280px;
+    margin-right: 250px;
+    box-shadow: -1px 1.3px 5px 0px rgba(82,80,82,1);
+    
+}
+
+article .box .img2{
+    height: 200px;
 }
 article .tex{
     text-align: center;
+
 }
-article .galeria img{
-    width: 260px;
-    height: 150px;
+article .tex h1{
+    padding: 20px;
 }
+
+
 article .galeria{
     display: grid;
-    margin-left: 10px;
-    margin-right: 10px;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     grid-auto-rows: minmax(200px, auto);
     gap: 5px;
     padding: 5px;
+}
+
+article .box2 .galeria .grid-item4{
+    background-image: url(../multimedia/bar1.jpg);
+    background-position: center;
+    border: 1px black solid;
+}
+article .box2 .galeria .grid-item2{
+    background-image: url(../multimedia/habitacion1.jpg);
+    background-position: center;
+    border: 1px black solid;
+}
+article .box2 .galeria .grid-item1{
+    background-image: url(../multimedia/habitacion2.jpg);
+    background-position: center;
+    border: 1px black solid;
+}
+article .box2 .galeria .grid-item3{
+    background-image: url(../multimedia/recepcion.jpg);
+    background-position: left center;
+    border: 1px black solid;
+}
+article .box2 .galeria .grid-item5{
+    background-image: url(../multimedia/restaurante2.jpg);
+    background-position: center;
+    border: 1px black solid;
+}
+
+@media (min-width: 600px){
+    .wide{
+        grid-column: span 2;
+    }
+    .tail{
+        grid-row: span 2;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 50px;
 }
 </style>
 </html>
